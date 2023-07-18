@@ -321,15 +321,15 @@
 		}
 
 		body.ultra-mode {
-			background-color: #4801ff
+			background-color: #ff0101
 		}
 
 		body.ultra-mode .curtain {
-			background-color: #4801ff!important
+			background-color: #ff0101!important
 		}
 
 		body.ultra-mode .about:before {
-			background-color: rgba(72,1,255,.85)
+			background-color: rgba(255, 1, 1, 0.85)
 		}
 
 		body.ultra-mode .logo {
@@ -345,7 +345,7 @@
 
 		@media screen and (max-width: 767px) {
 			body.ultra-mode .ui .info {
-				background-color:rgba(72,1,255,.85)
+				background-color:rgba(255, 1, 1, 0.85)
 			}
 		}
 
@@ -624,13 +624,13 @@
 
 		.ui .color-mode .circle:before {
 			border: 4px solid transparent;
-			border-top: 4px solid #4801ff;
+			border-top: 4px solid #ff0101;
 			transform: rotate(60deg)
 		}
 
 		.ui .color-mode .circle:after {
 			border: 4px solid transparent;
-			border-top: 4px solid #4801ff;
+			border-top: 4px solid #ff0101;
 			transform: rotate(30deg)
 		}
 
@@ -1393,7 +1393,7 @@
 							</button>
 						</li>
 						<li class="journal-li">
-							<a href="/journal">
+							<a href="https://veermshah.github.io/journal.md">
 								<strong>journal</strong>
 							</a>
 						</li>
@@ -1403,7 +1403,7 @@
 
 			<div class="right">
 				<nav class="social">
-					<ul>
+					<ul id="moveIt">
 						<li>
 							<a class="no-barba" href="https://github.com/veermshah" target="_blank" rel="noopener">
 								<strong>github</strong>
@@ -1420,6 +1420,12 @@
 							</a>
 						</li>
 					</ul>
+					<style>
+						#moveIt {
+							position: relative;
+							left: -180px;
+						}
+					</style>
 				</nav>
 
 				<!-- <div class="credits">
