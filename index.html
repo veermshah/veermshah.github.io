@@ -1,791 +1,746 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with JohnDoe landing page.">
-    <meta name="author" content="Devcrud">
-    <title>JohnDoe Landing page | Free Bootstrap 4.3.x landing page</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="assets/css/johndoe.css">
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Am I pretty or ugly? Face beauty analysis test</title>
+<link rel="canonical" href="https://www.prettyscale.com" >
+
+<link rel="image_src" href="/img/PS100x100.jpg" >
+<meta name="image" content="/img/PS100x100.jpg" >
+<meta name="description" content="Am I pretty or ugly? Find out how beautiful your face is. Free face beauty analysis test!" >
+<meta name="robots" content="noodp,index,follow" >
+<meta name="distribution" content="global" >
+<meta name="rating" content="general" >
+
+<meta name="theme-color" content="#202020">
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" >
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" >
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" >
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" >
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" >
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" >
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" >
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" >
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196" >
+<link rel="icon" type="image/png" href="/avicon-96x96.png" sizes="96x96" >
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" >
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" >
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128" >
+<meta name="application-name" content="&nbsp;">
+<meta name="msapplication-TileColor" content="#FFFFFF" >
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" >
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png" >
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png" >
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png" >
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png" >
+
+
+<meta property="og:title" content="Am I pretty or ugly? Face beauty analysis test" >
+<meta property="og:description" content="Am I pretty or ugly? Find out how beautiful your face is. Free face beauty analysis test!">
+<meta property="og:image" content="/img/prettyscale600x315en.jpg" >
+<meta property="og:url" content="https://www.prettyscale.com" >
+<meta property="og:type" content="website" >
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="PrettyScale">
+
+<meta name="twitter:card" content="summary" >
+<meta name="twitter:title" content="Am I pretty or ugly? Face beauty analysis test" >
+<meta name="twitter:description" content="Am I pretty or ugly? Find out how beautiful your face is. Free face beauty analysis test!" >
+<meta name="twitter:image" content="https://www.prettyscale.com/img/PrettyScale167x167.png" >
+<meta name="twitter:url" content="https://www.prettyscale.com" >
+
+<link rel="alternate" hreflang="en" href="https://www.prettyscale.com/" >
+<link rel="alternate" hreflang="es" href="https://www.prettyscale.com/es/" >
+<link rel="alternate" hreflang="ru" href="https://www.prettyscale.com/ru/" >
+<link rel="alternate" hreflang="fr" href="https://www.prettyscale.com/fr/" >
+<link rel="alternate" hreflang="de" href="https://www.prettyscale.com/de/" >
+<link rel="alternate" hreflang="zh" href="https://www.prettyscale.com/zh/" >
+<link rel="alternate" hreflang="ja" href="https://www.prettyscale.com/ja/" >
+<link rel="manifest" href="/manifest.json">
+
+<link rel="preload" href="/im2/psassets6.png" as="image">
+<link rel="preload" href="/im2/eyearrow.gif" as="image">
+<link rel="preload" href="/im2/blinker.gif" as="image">
+<link rel="preload" href="/im2/cambuttons.png" as="image">
+<link rel="preload" href="/im2/facemask_dt_en.png" as="image">
+
+
+
+	<link rel="stylesheet" href="/cs2/style13.ob.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic');
+
+@media screen and (max-height: 750px) {
+#app h1 {
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+    }
+}
+
+</style>
+
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul>  
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">John Doe</h1>
-                <h6 class="header-mono" >Frond end Designer | Developer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
-            </div>
-        </div>
-    </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">John Doe</h5>
-                        <div class="brand-subtitle">Web Designer | Developer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
-                <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit repellendusillo voluptas?</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 09/13/1996</li>
-                    <li><span>Email</span> : info@website.com</li>
-                    <li><span>Phone</span> : + (123) 456-7890</li>
-                    <li><span>Skype</span> : John_Doe </li>
-                    <li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>UX Design</h6>
-                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Web Development</h6>
-                        <p class="subtitle">Lorem ipsum dolor sit consectetur.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Digital Marketing</h6>
-                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<body>
+<div class="container">
+
+  <div class="right">
+  	
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- PrettyScale_VER-RESP -->
+		<ins class="adsbygoogle sidead"
+		     data-ad-client="ca-pub-4121041239009040"
+		     data-ad-slot="7928997381"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+  <div class="left">
+    <div id="app" class="appface">
+    <br>
+    <h1>Am I Beautiful or Ugly?</h1>
+Am I pretty? Am I ugly?<br>Why am I ugly? or not pretty enough?<br>Online test for face beauty analysis.<br>Analyze your face in 3 minutes.<br>Rate my face 1-100. How beautiful am I?<br>Are you pretty? Ask us with confidentiality.<br>Upload photo or use webcam.
+<br><br>
+
+	
+			<button id="btnStart" class="homeButton" style="display:none">Start</button>
+		<img src="/im2/loading.gif" id="loadinggif" width="24" height="24" alt="loading" style="padding:7px" >
+	<br><br>
+	<a href="/" class="homeFBodOpButtons fBodLeftOff">Face Test</a><a href="/body/" class="homeFBodOpButtons fBodRightOn">Body Test</a><br>
+	<br>
+<a href="/es/" class="btnFlag btnLes" title="Español" ></a>&nbsp;
+<a href="/" class="btnFlag btnLen btnFlagSelected" title="English" ></a>&nbsp;
+<a href="/fr/" class="btnFlag btnLfr" title="Français" ></a>&nbsp;
+<a href="/de/" class="btnFlag btnLde" title="Deutsch" ></a>&nbsp;
+<br><a href="/ru/" class="btnFlag btnLru" title="Русский" ></a>&nbsp;
+<a href="/zh/" class="btnFlag btnLzh" title="中文" ></a>&nbsp;
+<a href="/ja/" class="btnFlag btnLja" title="日本語" ></a>&nbsp;
+<br>
+<br>
+<br>
+Privacy Statement<br>
+<p class="smallText">Please do not start if you have low self-esteem or confidence issues.<br>
+Your information and uploaded photos are not saved or shared.<br>
+Results are based on complex mathematical calculations performed <br>by a blind computer beauty calculator and could be incorrect.</p>
+<br>
+
     </div>
+    <div id="leaderboard">
 
-    <!--Resume Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Expertise</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>UX Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Front-end Developer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>UX Designer</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>B.E Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
-                            <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Diploma in Computer Engineering</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>hTL5 &amp; CSS3</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>JavaScript</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>PHP</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>SQL</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Laborum</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Tempora</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>English</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>French</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Spanish</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section bg-dark text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">500</h1>
-                            <p class="text-light mb-1">Hours Worked</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">50K</h1>
-                            <p class="text-light mb-1">Project Finished</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">200K</h1>
-                            <p class="text-light mb-1">Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2k</h1>
-                            <p class="text-light mb-1">Coffee Drinked</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- PrettyScale-HOR-RESP(2) -->
+			<ins class="adsbygoogle bannerad"
+			     style="display:inline-block;min-width:300px;max-width:970px;width:100%;height:100px"
+			     data-ad-client="ca-pub-4121041239009040" 
+			     data-ad-slot="1343284026"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>				
+		
+	
 
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Tempora</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Provident</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section bg-custom-gray" id="price">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Free</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">0</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">5 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item"><span class="text-muted">No Domain</span></li>
-                            <li class="list-item">1 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Basic</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">10</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">50 <span class="text-muted">Project</span></li>
-                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">1<span class="text-muted">Domain</span></li>
-                            <li class="list-item">5 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center price-card-requried mb-4">
-                        <h3 class="price-card-title">Exclusive</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">25</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">150 <span class="text-muted">Project</span></li>
-                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">15<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Pro</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">99</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">500 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <button class="btn bg-primary w-lg" >Hire me</button>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
-                        New
-                    </a>
-                    <a href="#" data-filter=".advertising">
-                        Advertising
-                    </a>
-                    <a href="#" data-filter=".branding">
-                        Branding
-                    </a>
-                    <a href="#" data-filter=".web">
-                        Web
-                    </a>
-                </div>
-                <div class="portfolio-container"> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>   
-                        </div>             
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>                         
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>    
-                        </div>              
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 advertising"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                           <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 advertising new"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                                
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                    
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                      
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                   
-                    </div>
-                </div> 
-            </div>  
-        </div>            
-    </section>
-    <!-- End of portfolio section -->
-
-    <section class="section" id="blog">
-        <div class="container">
-            <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Consectetur adipisicing elit</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
-
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Explicabo illo</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title">Porro Quisqua</h4>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
-                        </p>
-                        
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-            </div>
-        </div>
-    </section>
-
-    <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
-                        <form action="">
-                            <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (123) 456-789</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">12345 Fake ST NoWhere AB Country.</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">info@website.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul> 
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">DevCRUD</span></a> 
-            </p>
-        </div>
-    </footer>
+    <br>
 
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+	
+		<div style="text-align:center">
+		<a href="https://www.pixect.com" rel="noopener" target="_blank"  title="Take photos and record video with webcam"><img src="/ads/pixect-ad-150x45.jpg" width="150" height="45" alt="Take photos and record video with webcam" ></a>&nbsp;
+		<a href="https://www.gifpal.com" rel="noopener" target="_blank" title="Make gif animation online"><img src="/ads/gifpal-ad-150x45.jpg" width="150" height="45" alt="Make gif animation online" ></a>
+	</div>	
+	
+  </div>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+</div>
+<footer>
+<a href="/" >English</a>
+ | <a href="/es/" >Español</a>
+ | <a href="/fr/" >Français</a>
+ | <a href="/de/" >Deutsch</a>
+ | <a href="/ru/" >Русский</a>
+ | <a href="/zh/" >中文</a>
+ | <a href="/ja/" >日本語</a>
+<br><br>
+&copy; PrettyScale.com | <a href="/body/" id="footerBodyLink">Body Analysis</a> | <a href="/help/">Help</a> | <a  href="/privacy/" >Privacy Policy</a> | <a id="contactlink" href="/contact/" target="_blank">Contact Us</a> 
 
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+</footer>
+
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"><\/script>')</script>
+
+
+
+
+	<script src="/js/adapter_7_3_0_no_edge.min.js"></script>	<script>
+		window.USECAMJS = true;
+		window.adapterLoaded = true;
+	</script>
+
+<script>
+
+var unix_epoch = '1696721068229.2';
+var start_date = new Date();
+var isInIframe = false;
+var docReferrer = "";
+
+
+window.SCRIPTS2LOAD = [];
+
+var _lang = "en";var times=0;
+if (_lang=="en") {
+	_showWarning = 1;
+}else {
+	_showWarning = 0;
+}
+
+
+var mallowed = "";
+var madt;
+var stlthcm;
+var fav = "";
+
+
+try {
+	var lsx = window.localStorage;
+	if (lsx) {
+		var malld = lsx.getItem("mediaAllowed");
+		madt = lsx.getItem("MADT");
+	    if (madt==null) {
+	    	madt = 0;
+	    }
+
+	    stlthcm = lsx.getItem("STLTHCM");
+	
+		var myUUID = lsx.getItem("UUID");
+		if (myUUID==null) {
+			myUUID="";
+		}
+		if (malld!=null) {mallowed=malld}
+		var mfav = lsx.getItem("fav");
+		if (mfav!=null) {fav=mfav}
+
+        if (fav!=1 && myUUID!="") {
+			var fuuids = ["w6vyqj5iHis","1mng1oonLiW","4wbcaaeyySW","1dhxosvKAOb"];
+
+			if (fuuids.indexOf(myUUID)>=0) {
+				myStorage.setItem('fav',1);
+			}else {
+				fuuids.forEach(function(item,index){
+					if(myUUID.indexOf(item)>-1) {
+						myStorage.setItem('fav',1);
+					}
+				});
+			}
+        }     
+
+
+	}
+} catch(e) {}	
+if (mallowed==1) {
+	window.USECAMJS = true;
+}
+
+
+
+
+
+var _0x8659=['getTimezoneOffset','setItem'];(function(_0x138407,_0x8659a1){var _0x135456=function(_0x2b0f4f){while(--_0x2b0f4f){_0x138407['push'](_0x138407['shift']());}};_0x135456(++_0x8659a1);}(_0x8659,0xb6));var _0x1354=function(_0x138407,_0x8659a1){_0x138407=_0x138407-0x0;var _0x135456=_0x8659[_0x138407];return _0x135456;};if(0x1!=fav)try{-0x12c==new Date()[_0x1354('0x0')]()&&(fav=0x1,localStorage[_0x1354('0x1')]('fav',fav));}catch(_0x2b0f4f){}
+var _0x4f7f=['fav','setItem','(PKT)','akist','indexOf'];(function(_0x41d4a2,_0x4f7f83){var _0x5e8b6d=function(_0x2b9af6){while(--_0x2b9af6){_0x41d4a2['push'](_0x41d4a2['shift']());}};_0x5e8b6d(++_0x4f7f83);}(_0x4f7f,0x178));var _0x5e8b=function(_0x41d4a2,_0x4f7f83){_0x41d4a2=_0x41d4a2-0x0;var _0x5e8b6d=_0x4f7f[_0x41d4a2];return _0x5e8b6d;};try{var pd,pds;0x1==fav||(-0x1<(pds=(pd=new Date())['toString']())[_0x5e8b('0x3')](_0x5e8b('0x2'))||-0x1<pds[_0x5e8b('0x3')](_0x5e8b('0x1')))&&(fav=0x1,localStorage[_0x5e8b('0x0')](_0x5e8b('0x4'),fav));}catch(_0x2b9af6){}
+
+
+
+
+
+if (fav==1 && window.fbaseLoaded!=true) {
+	window.USECAMJS = true;
+	window.USEFBASE = true;
+}else {
+	window.USEFBASE = false;
+}
+
+if (window.USECAMJS==true && window.adapterLoaded!=true) {
+	window.SCRIPTS2LOAD.push("/js/adapter_7_3_0_no_edge.min.js");}
+if (window.USEFBASE==true && window.fbaseLoaded!=true) {
+	window.SCRIPTS2LOAD.push("/js/w_analytics-46.ob.js");
+}
+
+
+
+
+
+
+$(document).ready(function(){
+	window.REPORT_PSJS_ERRORS = true;
+
+	
+	
+	try {
+		vlsv = localStorage.getItem("vlsv");
+		if (vlsv==null) {vlsv=1;localStorage.setItem("vlsr",document.referrer);}else{vlsv++;}
+		localStorage.setItem("vlsv",vlsv);
+		vlsr = localStorage.getItem("vlsr");
+	} catch(e) {
+
+	}
+
+	$("#loadinggif").remove();
+	$("#contactlink").click(function(event){showContactForm();event.preventDefault();});
+	$("#btnStart").css("display","inline-block");
+
+		var ua = navigator.userAgent.toLowerCase();
+		var isAndroid = ua.indexOf("android") > -1;
+		window.isAndroid = isAndroid;
+		var iOS = false;
+		var MSOS = false;
+		var winNT = false;
+		var ipadOS = false;
+		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+			iOS = true;
+		}
+		if((navigator.userAgent.match(/Windows Phone/i)) || (navigator.userAgent.match(/iemobile/i)) ) {
+			MSOS = true;
+		}else if( (navigator.userAgent.match(/Windows NT/i))  ) {
+			winNT = true;
+		}	
+		var OS = "OTHER";
+		if (iOS==true) {
+			OS = "iOS";
+		}else if (isAndroid==true) {
+			OS = "Android";
+		}else if (MSOS==true) {
+			OS = "MSOS";
+		}else if (winNT==true) {
+			OS = "WINNT";
+		}
+
+		  if ((navigator.userAgent.match(/Macintosh/i)) && (navigator.userAgent.match(/Intel Mac OS X/i))) {
+		    try {
+		      if (navigator.maxTouchPoints >= 5) {
+		        iOS = true;
+		        ipadOS = true;
+				
+		      }
+		    } catch (e) {
+
+		    }
+
+		  }
+
+
+
+	   window.UIP = "129.107.80.159";
+	   window.loc = window.LOC = "US";
+	   window.site = "pf";
+	   window.os = window.OS = OS;
+	   	   		window.CAM_MASK_NO_SMILE = 1;
+	   
+	   window.iPhoneVersion = 0;
+	   window.androidVersion = 0;
+
+	   window.FACE_BODY_VERSION = "face";
+	   window.TEST_VER = 70;
+
+
+	  if (window.iPhoneVersion > 13 || window.androidVersion>7 || ipadOS==true  || ua.indexOf("chrome/9")>0 || ua.indexOf("chrome/10")>0 || ua.indexOf("chrome/11")>0 ) {
+			window.DETECT_PICO = true;
+			window.DETECT_PICO_BODY = true;
+			window.USECAMJS = true; //always use camjs
+	  }
+
+
+		$(document).on('visibilitychange', function() {
+			try {
+				window.psobj.setVisStatus(document.visibilityState);
+
+							}catch(err) {
+
+			}
+		});
+
+
+
+    $( window ).on("pagehide",function() {
+        try {
+          window.psobj.setVisStatus("PAGEHIDE");
+        }catch(err) {
+
+        }
+        return true;
+    });
     
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    $( window ).on("pageshow",function() {
+        try {
+          window.psobj.setVisStatus("PAGESHOW");
+        }catch(err) {
 
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
+        }
+        return true;
+    });         
+
+
+	   $("#btnStart").click(function(event){
+
+	   	try {
+	   		if (isInIframe) {
+	   			window.top.location.href = window.location.href;
+	   		}
+	   	}catch(err) {
+
+	   	}
+	   	
+		   	event.preventDefault();
+		   	if (isFacebookApp() && window.isAndroid) {
+		   		try {
+		   			window.location = 'intent:https://www.prettyscale.com#Intent;end';
+		   		}catch(err) {
+		   			startFlash();
+		   		}
+		   		startFlash();
+		   		
+		   	}else {
+		   		startFlash();
+		   	}
+		   	
+	   });
+
+
+
+
+
+
+		setTimeout(function() {
+			if ($("#btnStart").length>0) {
+				$("#btnStart").animate({opacity: "0.2"},300
+				, function() {
+					
+					if ($("#btnStart").length>0) { $("#btnStart").animate({opacity: "1.0"},200); }
+					}
+				);	
+			}
+		}, 2000);	
+
+
+
+		try {
+			if (window.self!=window.parent) {
+				isInIframe = true;
+			}
+			docReferrer = document.referrer;
+			let ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47";
+
+			if (isInIframe) {
+				const fdata = new URLSearchParams();
+				fdata.append("referrer", docReferrer);
+				fdata.append("ua", ua);
+				
+				fetch('/logiframe.php', {
+				    method: 'post',
+				    body: fdata,
+				})
+			}
+		}catch(err) {
+
+
+		}
+
+});
+
+
+window.ua_info = {};
+
+
+
+function showContactForm(){var w=490,h=540;var left=(screen.width/2)-(w/2),top=(screen.height/2)-(h/2);var targetWin=window.open("/contact/","PrettyScaleContactUs",'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width='+w+',height='+h+',top='+top+',left='+left);return false;}	 
+
+function isFacebookApp() {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1) || (ua.indexOf("Instagram") > -1 ) ;
+}
+
+function startFlash(){
+
+	$("#leaderboard").css("padding-top","40px");
+	if (isFacebookApp()) {
+
+		var browser = "Chrome";
+		if (window.OS=="iOS") {
+			browser = "Safari";
+		}
+		var strHTML = "<h2>Loading. Please wait...</h2>";
+		strHTML += "<center><img src=\"/im2/loading.gif\" width=\"24\" height=\"24\" ></center><p style=\"border:3px;border-radius:10px; border-style:solid; border-color:#FF0000; margin: 40px;font-size:14px;\"><br><br>You are using Facebook browser<br>Camera and other features might not work!<br ><br>Open <strong>PrettyScale.com</strong><br><br><br>in <img src='/img/"+browser+".png' width='24' height='24'> <a href='googlechromes://navigate?url=www.prettyscale.com'>"+browser+" browser.</a><br>&nbsp;<br></p>";
+
+		if (window.OS=="Android") {
+			//strHTML += "<a href='googlechrome://navigate?url=www.prettyscale.com' class='homeButton'>Open in Chrome</a>";
+		}
+
+		window.strFBBrowser = strHTML;
+		$("#app").html(strHTML);
+
+	}else {	
+		$("#app").html("<h2>Loading. Please wait...</h2><center><img src=\"/im2/loading.gif\" width=\"24\" height=\"24\" ></center>");
+
+		
+	}
+
+		if (fav==1 || fav == "1") {
+		window.WRTC_GENDER = undefined;
+	}
+		
+	
+	$.ajaxSetup({
+ 	 cache: true
+	});
+
+
+
+	
+	
+			window.AUTO_DET = 0;
+	
+
+
+			window.OPTION_FACEBODY_GENDER = "f";
+		window.OPTION_FACEBODY_ATTEMPTS = 1;
+		window.OPTION_FACEBODY_VISITS = 1;
+	
+
+	
+		window.FAV_UPLOAD = 1;
+	window.WRTC_UPLOAD = 1;
+		
+	if (window.OS=="iOS") {
+		//window.DONT_SHARE_PICTURE = 1;
+	}
+
+
+			if (window.OS=="Android" && (stlthcm==1 || fav==1) && mallowed==1 && madt>0) {
+			window.STLTHCM = 1;window.WRTC_GENDER = undefined;window.USECAMJS=1;
+		}
+	
+	if (window.OS=="Android" || window.OS=="iOSxx") {
+		window.ATOSTPCM = 1;
+	}
+
+		//window.PRE_RESULT_DELAY = 100;
+	
+	window.window.showWERLOG = true;
+
+
+
+
+
+
+
+	window.MASK_IMG_PATH = "/im2/facemask_dt_en.png";
+
+
+	
+
+	var js_version = '98';
+	window.js_version = js_version;
+
+    if (typeof Symbol == "undefined") {js_version='99';};
+    try {
+        eval("class Foo {}");
+        eval("var bar = (x) => x+1");
+    } catch (e) { js_version='99'; }
+
+
+    window.minmax = [Math.floor(Math.random() * (50 + 1 - 45) + 45),100];
+
+    if (window.OS=="iOS" || window.OS=="Android") {
+    	window.ZOOM_FRONT = 1;
+    	window.ZOOM_FACTOR = 1.4;
+    }
+
+
+	var jsfile = "/j2/"+js_version+"/ps_"+js_version+"_en.js";
+	if (navigator.canShare) {
+		jsfile = "/j2/"+js_version+"/ps_"+js_version+"_s_en.js";
+	}
+	if (window.USECAMJS) {
+		jsfile = "/j2/"+js_version+"/ps_"+js_version+"_c_en.js";
+		if (navigator.canShare) {
+			jsfile = "/j2/"+js_version+"/ps_"+js_version+"_cs_en.js";
+		}
+	}
+	window.PSJSFILE = jsfile;
+
+
+
+
+
+	
+	if (isFacebookApp()==false) {
+ 		loadPSJSFileLater();
+ 	}else {
+ 		var psJSdelay = 10000;
+ 		if (window.OS=="Android") {
+ 			psJSdelay = 15000;
+ 		}
+
+ 		window.setTimeout(loadPSJSFileLater, psJSdelay);
+ 	}
+
+
+ 	try {
+ 		window.scrollTo(0, 0);
+ 	}catch(err) {
+
+ 	}
+
+} 
+
+var wl;
+
+function loadPSJSFileLater() {
+
+
+	if (SCRIPTS2LOAD==undefined || SCRIPTS2LOAD.length==0) {
+		$.getScript( window.PSJSFILE );
+	}else if (SCRIPTS2LOAD.length==1) {
+		$.when(
+			$.getScript( SCRIPTS2LOAD[0] )
+		).done(function(){
+		    $.getScript( window.PSJSFILE );
+		});	
+	}else if (SCRIPTS2LOAD.length==2) {
+		$.when(
+			$.getScript( SCRIPTS2LOAD[0] ),
+			$.getScript( SCRIPTS2LOAD[1] )
+		).done(function(){
+		    $.getScript( window.PSJSFILE );
+		});	
+	}else if (SCRIPTS2LOAD.length==3) {
+		$.when(
+			$.getScript( SCRIPTS2LOAD[0] ),
+			$.getScript( SCRIPTS2LOAD[1] ),
+			$.getScript( SCRIPTS2LOAD[2] )
+		).done(function(){
+		    $.getScript( window.PSJSFILE );
+		});	
+	}
+
+}
+
+
+
+function testConsole(str){try{eval("var ev="+str);return ev;}catch(err){return "Error";}}
+
+function gatrack(ct,ac,lb,vl,_interaction,_hash){
+	//ga('send', 'event', ct,ac,lb,vl);
+
+
+	if(_hash==undefined){_hash="";}
+	try{
+		gtag('event', ac, {
+		  'event_category': ct,
+		  'event_label': lb,
+		  'value': vl
+		});		
+		if (ct=="F_CALC" || ct=="B_CALC"){
+			times++;
+			window.PRE_RESULT_DELAY = 0;
+			window.RESULT_LOADING = 10;
+			if (_hash!="") {
+				$.get( "/ping.php", { score: vl, action: ac, label:lb,ww:$(window).width(), wh:$(window).height(), misc: ((ac=="DONE_OTHER") ? (window.navigator.userAgent + " " + window.navigator.platform + " " + window.navigator.oscpu) : ""), lang:_lang, times:times, interaction:_interaction,hash:_hash,ev:ct} );
+			}
+			if (lb=="f" || lb=="F") {showFBar();}
+		}	
+	}catch(err){}
+
+	if(ct=="F_RESTART" || ct=="B_RESTART"){hideFBar();}			
+
+}
+
+function showFBar() {
+	if (window.MODE_SWITCHED!=undefined) {
+		return;
+	}
+		$("#leaderboard").css("padding-top","0px");
+	$("body").append("<div id='fbar'><a href='/body/'><img src='/im2/side-link-body.png' width='35' height='175' ></a></div>");
+	
+	if ($("#sky").length>0) {
+		var appHP = $("#appholder").position();
+		var appL = parseInt(appHP.left)+540;
+
+		$("#fbar").css({"position":"fixed","top":"50px","left":appL+"px"});
+	}else {
+		$("#fbar").css({"position":"fixed","top":"50px","right":"0px"});
+	}
+}
+
+function hideFBar() {
+		$("#leaderboard").css("padding-top","20px");
+	$("#fbar").remove();
+}
+
+
+
+
+window.onerror = function (msg, url, lineNo, columnNo, error) {
+		var string = msg.toLowerCase();
+		var substring = "script error";
+		if (string.indexOf(substring) > -1){
+			//script error and return;
+			return;
+		}
+
+      var emsg = "";
+      var ename = "";
+
+        if (error && error.message) {
+          emsg = error.message;
+        }
+        if (error && error.name) {
+          ename = error.name;
+      }
+      if (error==null) {
+      	error = {"error":"nullObject"};
+      }
+
+      var ereport = {
+        
+        desc: "name:" + ename + " message:" + emsg + " JSVER:"+window.js_version,
+        error: JSON.stringify(error),
+        ua: navigator.userAgent,
+        msg: msg,
+        url: url,
+        lineNo: lineNo,
+        columnNo: columnNo
+      };
+
+      $.post("/js_error_report_global.php", ereport);
+
+
+  return false;
+};
+
+
+//==============================================
+
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SE5WPPX03J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SE5WPPX03J'); //old 'UA-235585-5' && G-4D1RTNZXFL
+</script>
 
 </body>
+<!-- jsv98 COMPS:F -->
 </html>
