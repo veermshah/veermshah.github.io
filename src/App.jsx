@@ -13,6 +13,8 @@ import {
 import ScrollProgress from "./components/ScrollProgress";
 
 const App = () => {
+
+
     return (
         <BrowserRouter>
             <div className="relative z-0 bg-primary">
