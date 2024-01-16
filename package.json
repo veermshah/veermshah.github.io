@@ -2,8 +2,8 @@
     "name": "3d-portfolio",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://veermshah.github.io/",
     "type": "module",
+    "homepage": "https://veermshah.github.io",
     "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist",
