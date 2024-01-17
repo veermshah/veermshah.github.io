@@ -44,11 +44,9 @@ const Navbar = () => {
                             if (musicPlaying === false) {
                                 sound.play();
                                 setMusicPlaying(true);
-                                console.log(musicPlaying);
                             } else {
                                 Howler.stop();
                                 setMusicPlaying(false);
-                                console.log(musicPlaying);
                             }
                         }}
                     >

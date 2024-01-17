@@ -23,6 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    python,
+    java,
+    cpp,
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +49,7 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Android Developer",
         icon: mobile,
     },
     {
@@ -81,10 +84,6 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
         name: "Tailwind CSS",
         icon: tailwind,
     },
@@ -105,31 +104,35 @@ const technologies = [
         icon: git,
     },
     {
-        name: "figma",
-        icon: figma,
+        name: "Python",
+        icon: python,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "C++",
+        icon: cpp,
+    },
+    {
+        name: "Java",
+        icon: java,
     },
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "",
+        title: "Cybersecurity Research Assistant",
+        company_name: "University of Texas - Dallas",
         icon: "",
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [""],
+        date: "June 2023 - Present",
+        points: ["Assisted PhD students by creating autonomous systems in drones and vehicles", "Injected bugs and used static analysis tools to pinpoint the root cause", "Used Python, C++, ROS 2, linux to ", "https://www.s3lab.io/profile/veer",],
     },
     {
-        title: "React Native Developer",
-        company_name: "",
+        title: "Software Engineering Intern",
+        company_name: "Mandatly LLC",
         icon: "",
         iconBg: "#E6DEDD",
         date: "Jan 2021 - Feb 2022",
-        points: [""],
+        points: ["Used Spacey NLP library to create redaction tool for sensitive information",],
     },
 ];
 
