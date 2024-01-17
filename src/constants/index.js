@@ -124,25 +124,32 @@ const experiences = [
         icon: "",
         iconBg: "#383E56",
         date: "June 2023 - Present",
-        points: ["Assisted PhD students by creating autonomous systems in drones and vehicles", "Injected bugs and used static analysis tools to pinpoint the root cause", "Used Python, C++, ROS 2, linux to ", "https://www.s3lab.io/profile/veer",],
+        points: [
+            "Assisted PhD students by creating autonomous systems in drones and vehicles",
+            "Injected bugs and used static analysis tools to pinpoint the root cause",
+            "Used Python, C++, ROS 2, linux to ",
+            "https://www.s3lab.io/profile/veer",
+        ],
     },
     {
         title: "Software Engineering Intern",
         company_name: "Mandatly LLC",
         icon: "",
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: ["Used Spacey NLP library to create redaction tool for sensitive information",],
+        date: "Dec 2023 - Present",
+        points: [
+            "Used Spacey NLP library to create redaction tool for sensitive information",
+        ],
     },
 ];
 
 const testimonials = [
     {
-        testimonial: "Veer is the tallest person I know.",
-        name: "Fake Person",
-        designation: "CEO",
-        company: "Fake Ppl Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+        testimonial: "",
+        name: "",
+        designation: "",
+        company: "",
+        image: "",
     },
 ];
 
