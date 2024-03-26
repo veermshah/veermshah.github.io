@@ -127,13 +127,13 @@ const experiences = [
             "Assisted PhD students by creating autonomous systems in drones and vehicles",
             "Injected bugs and used static analysis tools to pinpoint the root cause",
             "Used Python, C++, ROS 2, linux to ",
-            "https://www.s3lab.io/profile/veer",
+            "",
         ],
     },
     {
         title: "Software Engineering Intern",
         company_name: "Mandatly LLC",
-        icon: "https://mma.prnewswire.com/media/1781668/Mandatly_Logo.jpg",
+        icon: "",
         iconBg: "#E6DEDD",
         date: "Dec 2023 - Present",
         points: [
