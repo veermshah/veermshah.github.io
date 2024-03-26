@@ -22,6 +22,7 @@ import {
     carrent,
     jobit,
     moneyplant,
+    tripguide,
     threejs,
     python,
     java,
@@ -171,7 +172,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: tripguide,
         source_code_link: "https://github.com/jeremiahboban/HackTheChains",
     },
     {
@@ -196,14 +197,14 @@ const projects = [
     },
     {
         name: "Jobit",
-        description: "Charity Clarity uses the Solana Blockchain to make charity donations transparent, mitigating charity fraud/corruption. Anyone anywhere can view the charity account's transactions and audit the fund. This project won at SMU's HackTheChains blockchain hackathon. Visit CharityClarity.us.",
+        description: "WIP",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "solana",
+                name: "flask",
                 color: "green-text-gradient",
             },
             {
@@ -211,7 +212,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: creator,
         source_code_link: "https://github.com/jeremiahboban/HackTheChains",
     },
 ];
