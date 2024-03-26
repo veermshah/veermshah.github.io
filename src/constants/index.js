@@ -22,6 +22,7 @@ import {
     carrent,
     jobit,
     moneyplant,
+    charityclarity,
     tripguide,
     threejs,
     python,
@@ -172,7 +173,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: charityclarity,
         source_code_link: "https://github.com/jeremiahboban/HackTheChains",
     },
     {
@@ -212,7 +213,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: creator,
+        image: "",
         source_code_link: "https://github.com/jeremiahboban/HackTheChains",
     },
 ];
