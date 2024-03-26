@@ -32,7 +32,7 @@ const Hero = () => {
                         />
                     </div>
                     <p className={`text-[22px] mt-2 text-white-100`}>
-                        I build things.
+                        
                     </p>
                 </div>
             </div>
