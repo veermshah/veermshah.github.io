@@ -20,8 +20,6 @@ import {
     tesla,
     shopify,
     carrent,
-    jobit,
-    tripguide,
     threejs,
     python,
     java,
@@ -191,7 +189,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: carrent,
         source_code_link: "https://github.com/",
     },
     {
@@ -211,7 +209,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: carrent,
         source_code_link: "https://github.com/",
     },
 ];
