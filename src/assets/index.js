@@ -34,6 +34,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import moneyplant from "./moneyplant.png";
 import charityclarity from "./charityclarity.png";
+import portfolio from "./portfolio.png";
 
 export {
   logo,
@@ -66,6 +67,7 @@ export {
   tripguide,
   moneyplant,
   charityclarity,
+  portfolio,
   python,
   java,
   cpp,
