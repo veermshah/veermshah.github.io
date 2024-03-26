@@ -24,6 +24,7 @@ import {
     moneyplant,
     charityclarity,
     tripguide,
+    portfolio,
     threejs,
     python,
     java,
@@ -197,24 +198,24 @@ const projects = [
         source_code_link: "https://github.com/veermshah/Moneyplant",
     },
     {
-        name: "Jobit",
-        description: "WIP",
+        name: "This Portfolio",
+        description: "Check out the code!",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "flask",
+                name: "threejs",
                 color: "green-text-gradient",
             },
             {
-                name: "AWS",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
         ],
-        image: "",
-        source_code_link: "https://github.com/jeremiahboban/HackTheChains",
+        image: portfolio,
+        source_code_link: "https://github.com/veermshah/veermshah.github.io",
     },
 ];
 
