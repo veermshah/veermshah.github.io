@@ -120,7 +120,7 @@ const experiences = [
     {
         title: "Cybersecurity Research Assistant",
         company_name: "University of Texas - Dallas",
-        icon: "https://www.s3lab.io/pics/ecs.jpg",
+        icon: "",
         iconBg: "#383E56",
         date: "June 2023 - Jan 2024",
         points: [
