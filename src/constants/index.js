@@ -119,9 +119,9 @@ const experiences = [
     {
         title: "Cybersecurity Research Assistant",
         company_name: "University of Texas - Dallas",
-        icon: "",
+        icon: "https://www.s3lab.io/pics/ecs.jpg",
         iconBg: "#383E56",
-        date: "June 2023 - Present",
+        date: "June 2023 - Jan 2024",
         points: [
             "Assisted PhD students by creating autonomous systems in drones and vehicles",
             "Injected bugs and used static analysis tools to pinpoint the root cause",
@@ -132,7 +132,7 @@ const experiences = [
     {
         title: "Software Engineering Intern",
         company_name: "Mandatly LLC",
-        icon: "",
+        icon: "https://mma.prnewswire.com/media/1781668/Mandatly_Logo.jpg",
         iconBg: "#E6DEDD",
         date: "Dec 2023 - Present",
         points: [
@@ -153,35 +153,35 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
-        description: "",
+        name: "Charity Clarity",
+        description: "Charity Clarity uses the Solana Blockchain to make charity donations transparent, mitigating charity fraud/corruption. Anyone anywhere can view the charity account's transactions and audit the fund. This project won at SMU's HackTheChains blockchain hackathon. Visit CharityClarity.us.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "solana",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "AWS",
                 color: "pink-text-gradient",
             },
         ],
         image: carrent,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/jeremiahboban/HackTheChains",
     },
     {
-        name: "Job IT",
-        description: "",
+        name: "Moneyplant",
+        description: "Moneyplant is a financial robo-advisor that uses nature to destress the user before making financial decisions.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "django",
                 color: "green-text-gradient",
             },
             {
@@ -190,27 +190,7 @@ const projects = [
             },
         ],
         image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description: "",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/veermshah/Moneyplant",
     },
 ];
 
