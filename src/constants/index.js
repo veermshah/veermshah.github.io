@@ -145,11 +145,11 @@ const experiences = [
 
 const testimonials = [
     {
-        testimonial: "",
-        name: "",
-        designation: "",
-        company: "",
-        image: "",
+        testimonial: "Veer is one of the most hardworking people I know. He is always learning something new.",
+        name: "Sourish Pasula",
+        designation: "Boeing Intern",
+        company: "Boeing",
+        image: "https://media.licdn.com/dms/image/D5603AQFfqvOUHqKIQQ/profile-displayphoto-shrink_400_400/0/1687130168831?e=1717027200&v=beta&t=3UL3_EVkRyxKid5fpflSNHpGbymbuHFdviXUbTFCynY",
     },
 ];
 
