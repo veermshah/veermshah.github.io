@@ -20,6 +20,8 @@ import {
     tesla,
     shopify,
     carrent,
+    jobit,
+    moneyplant,
     threejs,
     python,
     java,
@@ -191,6 +193,26 @@ const projects = [
         ],
         image: carrent,
         source_code_link: "https://github.com/veermshah/Moneyplant",
+    },
+    {
+        name: "Jobit",
+        description: "Charity Clarity uses the Solana Blockchain to make charity donations transparent, mitigating charity fraud/corruption. Anyone anywhere can view the charity account's transactions and audit the fund. This project won at SMU's HackTheChains blockchain hackathon. Visit CharityClarity.us.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "solana",
+                color: "green-text-gradient",
+            },
+            {
+                name: "AWS",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: carrent,
+        source_code_link: "https://github.com/jeremiahboban/HackTheChains",
     },
 ];
 
