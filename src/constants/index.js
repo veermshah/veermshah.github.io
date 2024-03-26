@@ -19,8 +19,9 @@ import {
     starbucks,
     tesla,
     shopify,
-    moneyplant,
-    charityclarity,
+    carrent,
+    jobit,
+    tripguide,
     threejs,
     python,
     java,
@@ -122,12 +123,12 @@ const experiences = [
         company_name: "University of Texas - Dallas",
         icon: "",
         iconBg: "#383E56",
-        date: "June 2023 - Jan 2024",
+        date: "June 2023 - Present",
         points: [
             "Assisted PhD students by creating autonomous systems in drones and vehicles",
             "Injected bugs and used static analysis tools to pinpoint the root cause",
             "Used Python, C++, ROS 2, linux to ",
-            "",
+            "https://www.s3lab.io/profile/veer",
         ],
     },
     {
@@ -154,35 +155,15 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Charity Clarity",
-        description: "Charity Clarity uses the Solana Blockchain to make charity donations transparent, mitigating charity fraud/corruption. Anyone anywhere can view the charity account's transactions and audit the fund. This project won at SMU's HackTheChains blockchain hackathon. Visit CharityClarity.us.",
+        name: "Car Rent",
+        description: "",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "solana",
-                color: "green-text-gradient",
-            },
-            {
-                name: "AWS",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: charityclarity,
-        source_code_link: "https://github.com/jeremiahboban/HackTheChains",
-    },
-    {
-        name: "Moneyplant",
-        description: "Moneyplant is a financial robo-advisor that uses nature to destress the user before making financial decisions.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "django",
+                name: "mongodb",
                 color: "green-text-gradient",
             },
             {
@@ -190,8 +171,48 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: moneyplant,
-        source_code_link: "https://github.com/veermshah/Moneyplant",
+        image: carrent,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Job IT",
+        description: "",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobit,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Trip Guide",
+        description: "",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
     },
 ];
 
