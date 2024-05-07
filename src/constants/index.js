@@ -159,7 +159,7 @@ const testimonials = [
 const projects = [
     {
         name: "Charity Clarity",
-        description: "Charity Clarity uses the Solana Blockchain to make charity donations transparent, mitigating charity fraud/corruption. Anyone anywhere can view the charity account's transactions and audit the fund. This project won at SMU's HackTheChains blockchain hackathon. Visit CharityClarity.us.",
+        description: "Charity Clarity uses the Solana Blockchain to make charity donations transparent, mitigating charity fraud/corruption. Anyone anywhere can view the charity account's transactions and audit the fund. This project won at SMU's HackTheChains blockchain hackathon. Visit CharityClarity.us",
         tags: [
             {
                 name: "react",
@@ -179,7 +179,7 @@ const projects = [
     },
     {
         name: "Moneyplant",
-        description: "Moneyplant is a financial robo-advisor that uses nature to destress the user before making financial decisions.",
+        description: "Moneyplant is a financial robo-advisor that uses nature to destress the user before making financial decisions. Visit money-plant-demo.netlify.app",
         tags: [
             {
                 name: "react",
