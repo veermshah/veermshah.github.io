@@ -1,0 +1,70 @@
+[
+  {
+    "source": "results-qwen06",
+    "config": {
+      "base_url": "http://127.0.0.1:8090/v1",
+      "key_env": "OPENAI_API_KEY",
+      "model": "Qwen3-0.6B-Q4_K_M",
+      "context": 8192,
+      "max_tokens": 256,
+      "raw_max_tokens": 64,
+      "timeout": 600,
+      "disable_thinking": true,
+      "levels": [
+        "immutable",
+        "overwrite",
+        "self",
+        "reference"
+      ],
+      "lengths": [
+        8,
+        32,
+        128
+      ],
+      "variables": 4,
+      "samples": 1,
+      "seed": 42,
+      "methods": [
+        "raw",
+        "model-scratchpad",
+        "model-tool"
+      ],
+      "chunk_size": 8,
+      "output": "results-qwen06"
+    }
+  },
+  {
+    "source": "results-qwen17",
+    "config": {
+      "base_url": "http://127.0.0.1:8091/v1",
+      "key_env": "OPENAI_API_KEY",
+      "model": "Qwen3-1.7B-Q4_K_M",
+      "context": 8192,
+      "max_tokens": 256,
+      "raw_max_tokens": 64,
+      "timeout": 600,
+      "disable_thinking": true,
+      "levels": [
+        "immutable",
+        "overwrite",
+        "self",
+        "reference"
+      ],
+      "lengths": [
+        8,
+        32,
+        128
+      ],
+      "variables": 4,
+      "samples": 1,
+      "seed": 42,
+      "methods": [
+        "raw",
+        "model-scratchpad",
+        "model-tool"
+      ],
+      "chunk_size": 8,
+      "output": "results-qwen17"
+    }
+  }
+]

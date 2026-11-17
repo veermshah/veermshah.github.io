@@ -1,0 +1,11 @@
+{
+  "status": "infrastructure_interrupted",
+  "completed_calls": 0,
+  "completed_arms": 0,
+  "date_utc": "2026-11-16 00:26:55.301812+00:00",
+  "reason": "Shared server stalled behind pathological generic JSON grammar calls from another project. Coordinator requested stopping servers and this pending experiment. No benchmark model response completed; no accuracy or cost inference is made. A fresh attempt will be separately named.",
+  "stopped_client_pids": [],
+  "recorded_arms": 36,
+  "technical_errors": 36,
+  "explanation": "Client completed error records quickly after shared server interruption; these errors are infrastructure failures, not reasoning failures."
+}

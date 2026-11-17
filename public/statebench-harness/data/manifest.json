@@ -1,0 +1,9 @@
+{
+  "records": 72,
+  "model_calls": 171,
+  "input_tokens": 55648,
+  "output_tokens": 4308,
+  "transport_context_errors": 0,
+  "source_sha256": "5729ad25a2a4096e3f234dc48e2a119784316b75fd68ef0bec498749f225195b",
+  "inference": "archived CPU inference; no live model runs in this website"
+}

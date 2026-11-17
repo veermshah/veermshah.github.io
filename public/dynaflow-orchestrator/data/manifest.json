@@ -1,0 +1,65 @@
+{
+  "kind": "recorded experiment explorer; no live model calls",
+  "artifacts": [
+    {
+      "path": "data/official.json",
+      "source": "results-qwen3-cpu/results.json",
+      "sha256": "f075479cb6742e9a7277d844d4a9dc8ac2939e54250b74a47f7fb5696589b6fc",
+      "bytes": 411896
+    },
+    {
+      "path": "data/calibration.json",
+      "source": "results-qwen3-toy/results.json",
+      "sha256": "ce0889844a73aadcbdf9241b23368ca1dc98c6cec36a0444fe821212a3974244",
+      "bytes": 128621
+    },
+    {
+      "path": "data/official-before-wrapper-normalization.json",
+      "source": "results-qwen3-cpu/results.before-xml-answer-normalization.json",
+      "sha256": "1c34560e2eba866c9a618071c3753eeed1e94c6d37c083efeef567b86f8c1846",
+      "bytes": 409715
+    },
+    {
+      "path": "data/calibration-before-wrapper-normalization.json",
+      "source": "results-qwen3-toy/results.before-xml-answer-normalization.json",
+      "sha256": "07ce669e9459e5424ab440cbab4dd78cfcad696c59fbf5382562bde76b587a1f",
+      "bytes": 125574
+    },
+    {
+      "path": "data/interrupted-attempt.json",
+      "source": "results-qwen3-cpu-interrupted/ATTEMPT.json",
+      "sha256": "ec57a88de48d2c391fb3806c30edf50986b882c8d0b413c928e09ccaebba5f05",
+      "bytes": 673
+    },
+    {
+      "path": "data/README.md",
+      "source": "README.md",
+      "sha256": "62b955a01515c514996460465f22f95ca9253bf2adb3d7c35eca99455808a4b1",
+      "bytes": 17265
+    },
+    {
+      "path": "data/DATA.md",
+      "source": "DATA.md",
+      "sha256": "081e6d201d49ab8ced2db2498c43e92166e14a1c48aff03e6f2a12db806836e2",
+      "bytes": 2467
+    },
+    {
+      "path": "data/DATA_PROVENANCE.json",
+      "source": "DATA_PROVENANCE.json",
+      "sha256": "da1b577c724a817f30935225e4c3496bdc420a2fbe989afdc363ca61ee39c933",
+      "bytes": 1534
+    },
+    {
+      "path": "data/RUN_METADATA.json",
+      "source": "RUN_METADATA.json",
+      "sha256": "87e3e555492db92f923b59cd07e43095d8ac4f626acd425ba604b7a8b3c68ecc",
+      "bytes": 1988
+    },
+    {
+      "path": "data/MODEL_RUNS.md",
+      "source": "MODEL_RUNS.md",
+      "sha256": "506dc780e5d0d5127ca8e5f3a80e1b0633b930fd318fdefb34182e4ba8135505",
+      "bytes": 3255
+    }
+  ]
+}

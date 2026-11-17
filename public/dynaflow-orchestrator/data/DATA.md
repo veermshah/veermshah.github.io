@@ -1,0 +1,12 @@
+# Dataset provenance
+
+`tasks.json` contains 12 original toy tasks (six math, six fictional graph questions), used only for deterministic smoke testing. They are not official AIME or HotpotQA records.
+
+`benchmark_tasks.json` contains a reproducible public subset, retrieved 2026-11-16 from Hugging Face's dataset-server API:
+
+- [HuggingFaceH4/aime_2024](https://huggingface.co/datasets/HuggingFaceH4/aime_2024): first six rows of `default/train`, original IDs 60–65. These are real 2024 AIME problems and answer labels from the mirror, not invented AIME-style questions. Only the problem and answer are bundled; reference solutions are omitted. An instruction asks for an integer answer. AIME is an MAA competition; source questions/solutions in the mirror originate from competition/AoPS material. Consult the linked source for its reuse terms; this project claims no ownership of those questions.
+- [hotpotqa/hotpot_qa](https://huggingface.co/datasets/hotpotqa/hotpot_qa): first six rows of `distractor/validation`, original record IDs preserved. Every one of the ten original context paragraphs is retained, joining sentence strings within each title. Supporting-fact labels are omitted. These are real public validation records, not a sample of newly authored questions. See [HotpotQA](https://hotpotqa.github.io/) and [Yang et al. (2018)](https://arxiv.org/abs/1809.09600) for dataset attribution, and the source's licensing/reuse terms (including underlying Wikipedia content).
+
+`DATA_PROVENANCE.json` records exact URLs, source IDs, row indices, retrieval date, transformation and SHA-256 of the retrieval response. It is enough to re-query and compare provenance; the original response, which included reference solutions, is deliberately not shipped. The public API URL is not required at runtime: the transformed 12-item subset is bundled for offline reproduction.
+
+Selection is the first six records of each dataset, fixed before inference. This is a tiny convenience subset, not a representative or independently held-out evaluation. Public examples may have been in model training. No question, selection or answer label is changed to improve scores. Labels are used solely for scoring, not passed to any orchestrator/sub-agent. The AIME grader accepts integer-equivalent leading zeroes; HotpotQA exact-match grading lowercases and removes punctuation/articles/extra whitespace in the style of its official normalizer. No partial-credit F1 is reported.

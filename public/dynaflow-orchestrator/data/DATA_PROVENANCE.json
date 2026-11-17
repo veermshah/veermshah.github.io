@@ -1,0 +1,48 @@
+[
+  {
+    "dataset": "aime",
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=HuggingFaceH4%2Faime_2024&config=default&split=train&offset=0&length=6",
+    "row_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_ids": [
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "retrieved_utc": "2026-11-16",
+    "response_sha256": "dd1fc7d96aa08d5edae432dd082b75c04d8d78003994ee6708af4b82e6097281",
+    "transformation": "Question and answer preserved; AIME adds integer-answer instruction. Hotpot retains every distractor paragraph, joins sentences within each title. Solutions and supporting-fact annotations omitted."
+  },
+  {
+    "dataset": "hotpot",
+    "source_url": "https://datasets-server.huggingface.co/rows?dataset=hotpotqa%2Fhotpot_qa&config=distractor&split=validation&offset=0&length=6",
+    "row_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "source_ids": [
+      "5a8b57f25542995d1e6f1371",
+      "5a8c7595554299585d9e36b6",
+      "5a85ea095542994775f606a8",
+      "5adbf0a255429947ff17385a",
+      "5a8e3ea95542995a26add48d",
+      "5abd94525542992ac4f382d2"
+    ],
+    "retrieved_utc": "2026-11-16",
+    "response_sha256": "54d409cadd8a3573dc35ac76117863d49790087deb6f22b7cf5534ff97ee9d6c",
+    "transformation": "Question and answer preserved; AIME adds integer-answer instruction. Hotpot retains every distractor paragraph, joins sentences within each title. Solutions and supporting-fact annotations omitted."
+  }
+]

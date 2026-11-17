@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>Dallas · Pop-Up Optimizer</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5f0;color:#173c37;font:16px system-ui}header{padding:28px 5%;background:#173c37;color:white}header p{color:#c5d9d0}h1{margin:0;font-size:32px}main{max-width:1400px;margin:auto;padding:24px}form{display:flex;gap:18px;flex-wrap:wrap;align-items:end;margin-bottom:20px}label{display:grid;gap:7px;font-size:13px;font-weight:650}select,input,button{padding:11px;border:1px solid #bacdc4;border-radius:6px;font:inherit}button{background:#b5ec8a;color:#173c37;font-weight:bold;cursor:pointer}.notice{padding:12px 16px;background:#fff1d3;border-left:4px solid #ba731b;font-size:13px}.layout{display:grid;grid-template-columns:1.4fr 1fr;gap:22px;margin-top:20px}.map{background:#e1eae0;border:1px solid #c7d4c9;border-radius:12px;overflow:hidden}svg{width:100%;height:auto;display:block}article{background:white;border:1px solid #dce4dc;border-radius:10px;padding:16px;margin-bottom:12px}article h3{margin:0 0 8px}article p{font-size:14px;line-height:1.5;margin:0}.metric{font-size:28px;font-weight:bold}small{color:#516d63}#error{color:#a22323}#summary{padding:14px 0}circle.stop{cursor:pointer}article:target{outline:3px solid #376b50}@media(max-width:800px){.layout{grid-template-columns:1fr}}
+</style><header><h1>Pop-Up Optimizer</h1><p>Plan the next stop. See who it could reach.</p></header><main><p class="notice">Synthetic Dallas demo — approximate neighborhood coordinates; invented demographics and clinic access. Estimated travel times, no road routing. Locations are illustrative, not verified venues.</p><form id="controls"><label>Area<select name="city"><option>Dallas</option></select></label><label>Service<select name="service"><option value="health">Health van</option><option value="food">Food bank</option><option value="vaccine">Vaccine clinic</option></select></label><label>Stops<input name="stops" type="number" min="1" max="10" value="5" required></label><label>Travel time (minutes)<input name="minutes" type="number" min="5" max="45" value="15" required></label><button>Find locations</button></form><div id="error" role="alert"></div><div id="summary" aria-live="polite"></div><div class="layout"><div><div class="map"><svg viewBox="0 0 700 650" id="map" role="img" aria-label="Geographic map of Dallas sample population centers and recommended stops"></svg></div><p><small>North ↑ · Circles show estimated coverage. Small dots are sample population centers. Map uses latitude/longitude; background is schematic. Click a numbered stop for its explanation.</small></p></div><section id="results" aria-label="Ranked recommendations"></section></div></main><script src="./data.js"></script><script src="./optimizer.js"></script><script>
+const $=id=>document.getElementById(id);const num=n=>n.toLocaleString();
+function render(data){
+ $('summary').innerHTML=`<span class="metric">${num(data.unique_population_served)}</span> of ${num(data.sample_population)} synthetic residents reached · ${data.stops.length} stops · overlap counted once`;
+ const x=lon=>(lon+96.97)/.4*700,y=lat=>(33.015-lat)/.4*650;
+ let s='<rect width="700" height="650" fill="#e1eae0"/>';
+ for(let lon=-96.95;lon<=-96.6;lon+=.05)s+=`<path d="M${x(lon)} 0 V650" stroke="#cfdbcf"/><text x="${x(lon)+3}" y="638" fill="#758b7b" font-size="10">${lon.toFixed(2)}°</text>`;
+ for(let lat=32.65;lat<33;lat+=.05)s+=`<path d="M0 ${y(lat)} H700" stroke="#cfdbcf"/>`;
+ s+='<text x="22" y="35" fill="#54715f" font-size="17">DALLAS AREA</text><text x="653" y="35" font-size="18">N ↑</text>';
+ // Stylized Trinity River and major highway corridors for orientation, not navigation.
+ s+=`<path d="M${x(-96.94)} ${y(32.91)} Q${x(-96.87)} ${y(32.79)} ${x(-96.81)} ${y(32.76)} T${x(-96.71)} ${y(32.64)}" fill="none" stroke="#99c4cc" stroke-width="10" opacity=".8"/><text x="65" y="355" fill="#527e87" font-size="12">Trinity River (schematic)</text>`;
+ for(const p of data.centers)s+=`<circle cx="${x(p.lon)}" cy="${y(p.lat)}" r="${3+Math.sqrt(p.population)/35}" fill="#688470" opacity=".5"><title>${p.name}: ${num(p.population)} sample residents</title></circle>`;
+ for(const p of data.stops){s+=`<ellipse cx="${x(p.lon)}" cy="${y(p.lat)}" rx="${data.radius_km/(111.32*Math.cos(32.8*Math.PI/180))/.4*700}" ry="${data.radius_km/111.32/.4*650}" fill="#a7db7f" fill-opacity=".22" stroke="#598c46" stroke-dasharray="5 4"/>`}
+ for(const p of data.stops)s+=`<a href="#stop-${p.rank}"><circle class="stop" cx="${x(p.lon)}" cy="${y(p.lat)}" r="16" fill="#173c37"><title>${p.name}</title></circle><text pointer-events="none" x="${x(p.lon)}" y="${y(p.lat)+5}" text-anchor="middle" fill="white" font-weight="bold">${p.rank}</text></a>`;
+ s+='<path d="M30 590h94m-94 -5v10m94 -10v10" stroke="#173c37" stroke-width="2"/><text x="30" y="613" font-size="12">5 km (east–west)</text>';
+ $('map').innerHTML=s;$('results').innerHTML=data.stops.map(p=>`<article id="stop-${p.rank}"><h3>${p.rank}. ${p.name}</h3><p>${p.explanation}</p><small>${p.lat.toFixed(4)}° N, ${Math.abs(p.lon).toFixed(4)}° W · illustrative candidate</small></article>`).join('');
+}
+function update(e){
+ if(e)e.preventDefault();$('error').textContent='';
+ try {
+  const form=new FormData($('controls'));
+  render(PopUpOptimizer.optimize(POPUP_DATA,form.get('service'),Number(form.get('stops')),Number(form.get('minutes'))));
+ }catch(error){$('error').textContent=error.message}
+}
+$('controls').addEventListener('submit',update);
+update();
+</script></html>

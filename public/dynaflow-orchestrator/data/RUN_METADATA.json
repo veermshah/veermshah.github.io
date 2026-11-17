@@ -1,0 +1,51 @@
+{
+  "date_utc": "2026-11-16",
+  "model_source": {
+    "repository": "unsloth/Qwen3-0.6B-GGUF",
+    "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b",
+    "file": "Qwen3-0.6B-Q4_K_M.gguf",
+    "download_url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_K_M.gguf",
+    "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+    "bytes": 396705472
+  },
+  "runtime": "llama-cpp-python 0.3.36, llama.cpp CPU",
+  "server": "../../local_model_server.py",
+  "server_settings": {
+    "n_ctx": 8192,
+    "n_threads": 1,
+    "n_threads_batch": 1,
+    "n_gpu_layers": 0,
+    "seed": 42,
+    "chat_template": "Explicit Qwen3 ChatML + empty assistant <think> block; non-thinking"
+  },
+  "experiment": {
+    "temperature": 0,
+    "max_tokens_per_call": 256,
+    "max_tokens_workflow": 256,
+    "input_fee_per_million_tokens": 0,
+    "output_fee_per_million_tokens": 0,
+    "tasks": "benchmark_tasks.json",
+    "selection": "first six rows of each dataset before inference"
+  },
+  "limits": [
+    "Tiny convenience subset, no confidence/generalization claim",
+    "Local API fees exclude hardware, electricity and labor",
+    "Shared endpoint may queue calls; wall times not isolated throughput",
+    "No QLoRA training; no original 27B backbone"
+  ],
+  "calibration": {
+    "backend": "openai-compatible CPU llama.cpp",
+    "endpoint": "http://127.0.0.1:8091/v1",
+    "model": "Qwen3-0.6B-Q4_K_M",
+    "same_weight_sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+    "tasks": "tasks.json",
+    "dataset": "12 original toy tasks, not official benchmark records",
+    "max_tokens": 128,
+    "plan_max_tokens": 192,
+    "temperature": 0,
+    "context": 8192,
+    "threads": 1,
+    "api_fees": 0,
+    "reason": "Separate accessible calibration because AIME official subset was at a zero-correct floor; retains official cohort and uses spare CPU, with different cap disclosed."
+  }
+}
