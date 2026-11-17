@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    <script>
+      if (location.hostname === 'veermshah.github.io' && (location.pathname === '/' || location.pathname === '/index.html')) {
+        location.replace('https://www.veermickey.com/' + location.search + location.hash);
+      }
+    </script>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/public/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

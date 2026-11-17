@@ -1,5 +1,9 @@
 # DynaFlow-style executable orchestrator
 
+**Hosted demo:** https://veermshah.github.io/dynaflow-orchestrator/
+
+The hosted site is published from the account’s existing GitHub Pages deployment. It displays recorded model measurements; run the CLI for new experiments. The `docs/` folder can also be published from this standalone repository or a fork.
+
 A working same-model comparison of solo reasoning, a fixed planner → solver → reviewer pipeline, and a lead model that emits a per-task Python coordination program. Generated workflows support concurrent independent solvers, verification and aggregation; all handoffs include the original task and complete previous outputs. A strict AST interpreter runs the allowed workflow calls without executing arbitrary Python.
 
 The completion pass uses **real Qwen3-0.6B Q4_K_M CPU inference**, substituting for the paper's trained 27B backbone. Bundled public benchmark records comprise six AIME 2024 and six HotpotQA distractor-validation questions. This is a small prompt-based reproduction of executable orchestration, not a reproduction of the trained paper system or its full benchmark score.
